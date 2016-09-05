@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                       controllers.Basic.index
+
+
+#######mllib
+
+GET     /regfillparam           controllers.Basic.simp_reg
+POST    /elasticRegression      controllers.Regression.callRegression
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+#GET  /d3/boxplot.html                     controllers.Assets.at(path="/public/d3", file="boxplot.html")

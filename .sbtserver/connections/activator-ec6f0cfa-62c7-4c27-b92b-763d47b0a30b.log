@@ -1,0 +1,23 @@
+New log file opened at Tue Mar 29 09:28:16 CST 2016 by 8652@ubuntu
+Sending msg to client activator-ec6f0cfa-62c7-4c27-b92b-763d47b0a30b: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /home/superorange/Play_workspace/helloworld/.sbtserver/connections/master.log))
+Sending msg to client activator-ec6f0cfa-62c7-4c27-b92b-763d47b0a30b: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /home/superorange/Play_workspace/helloworld/.sbtserver/master.log))
+Sending msg to client activator-ec6f0cfa-62c7-4c27-b92b-763d47b0a30b: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /home/superorange/Play_workspace/helloworld/.sbtserver/connections/activator-ec6f0cfa-62c7-4c27-b92b-763d47b0a30b.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: ExecutionRequest(compile)
+Reading next message from client.

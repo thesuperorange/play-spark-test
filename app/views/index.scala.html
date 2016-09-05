@@ -1,0 +1,81 @@
+@import helper._
+@(helloForm: Form[(String, Option[String])])(implicit messages: Messages)
+    @**(helloForm:String)**@
+    @main(title = "The 'helloworld' application") {
+     @**helloForm**@
+
+    <h2>Step 1: Import Data from HDFS</h2>
+        <h3>輸入要匯入的csv檔案在hdfs中的路徑</h3>
+        <h3>轉換數值與類別型態，並選擇不必要的欄位</h3>
+    <h2>Step 2: Convert Dataframe to Vector</h2>
+        <h3>選擇label(Unsupervised learning可不選)，將features轉換成vector</h3>
+    <h2>Step 3: Build machine learning Model</h2>
+    <h3>選擇Machine learning演算法</h3>
+    <h2>Step 4: Using your model to predict result</h2>
+        <script>
+
+                var form = document.createElement("form");
+                form.method='GET';
+                form.action = '@routes.Basic.index';
+                //form.name ='helloform'
+
+                var mytb = document.createElement("input")
+                mytb.type='text'
+                mytb.name = 'name'
+                mytb.value ='value of my input'
+                form.appendChild(mytb)
+
+                var array = ["red","green","blue"];
+
+                //Create and append select list
+                var selectList = document.createElement("select");
+                selectList.name="color";
+
+                //Create and append the options
+                for (var i = 0; i < array.length; i++) {
+                    var option = document.createElement("option");
+                    option.setAttribute("value", array[i]);
+                    option.text = array[i];
+                    selectList.appendChild(option);
+                }
+
+                form.appendChild(selectList)
+
+                var button = document.createElement("input");
+                button.type='submit'
+                button.value='save'
+                form.appendChild(button);
+
+                document.body.appendChild(form);
+                // form.submit();
+
+        </script>
+
+
+
+
+        @**form(action = routes.Basic.index, args = 'id -> "helloform") {
+
+        @inputText(
+        field = helloForm("name"),
+        args = '_label -> "What's your name?", 'placeholder -> "World"
+        )
+
+        @select(
+        field = helloForm("color"),
+        options = options(
+        "" -> "Default",
+        "red" -> "Red",
+        "green" -> "Green",
+        "blue" -> "Blue"
+        ),
+        args = '_label -> "Choose a color"
+        )
+
+        <p class="buttons">
+        <input type="submit" id="submit">
+        <p>
+
+        }
+        **@
+    }

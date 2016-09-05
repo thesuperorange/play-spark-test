@@ -1,0 +1,98 @@
+
+@(title: String)(content: Html)
+
+
+<html>
+    <head>
+        <title>@title</title>
+       <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="@routes.Assets.at("javascripts/jquery-1.6.4.min.js")" type="text/javascript"></script>
+        <script language=JAVASCRIPT src="@routes.Assets.at("javascripts/ddsmoothmenu.js")"></script>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/ddsmoothmenu.css")">
+
+        <script type="text/javascript">
+                ddsmoothmenu.init({
+                    mainmenuid: "smoothmenu1", 		//div id
+                    orientation: 'h', 				//horizontal or vertical
+                    classname: 'ddsmoothmenu', 		//ddsmoothmenu css template
+                    contentsource: "markup"	,	 	//"markup" or ["container_id", "path_to_menu_file"]
+                    customtheme: ["#8f1414", "#bc3315"] //background color & hover color
+                })
+
+        </script>
+
+        <script>
+       /*         $(".toggle-btn:not('.noscript') input[type=radio]").addClass("visuallyhidden");
+                $(".toggle-btn:not('.noscript') input[type=radio]").change(function() {
+                    if( $(this).attr("name") ) {
+                        $(this).parent().addClass("success").siblings().removeClass("success")
+                    } else {
+                        $(this).parent().toggleClass("success");
+                    }
+                });*/
+
+        </script>
+
+        <style>
+/*
+        body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+        width: 960px ;
+        height: 500px ;
+        position: relative ;
+        }
+*/
+
+        </style>
+
+    </head>
+
+    <body>
+     <!--   <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' type='text/css' media='all' />-->
+        <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+        <!--<script type='text/javascript' src= 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>-->
+
+        <div class="container">
+
+            <h1>Spark ML Platform</h1>
+            <div style="text-align:center ; clear:both ;">
+            </div>
+
+    <!--        <nav class="navbar navbar-default equinav" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">Menu</span>
+                </div> <!-- /.navbar-header -->
+                <div id="smoothmenu1" >
+                    <ul >
+                        <li> <a href="@routes.Basic.index()">Home</a> </li>
+                        <li><a href="#">Simple</a>
+
+                        </li>
+                        <li><a href="#">Train Model</a>
+                            <ul >
+                                <li><a href="@routes.Basic.simp_reg">LinearRegression_train</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#" >Machine Learning </a>
+
+                        </li>
+
+
+                    </ul>
+                    <br style="clear: left" />
+                </div> <!-- /.navbar-collapse -->
+           <!-- </nav>-->
+
+        </div>
+
+<br><br><br>
+
+        @content
+    </body></html>

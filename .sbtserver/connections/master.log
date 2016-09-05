@@ -1,0 +1,51 @@
+New log file opened at Tue Mar 29 09:27:18 CST 2016 by 8652@ubuntu
+Taking next connection to: 53893
+New client attempting to connect on port: 40147-53893
+  Address = /127.0.1.1:53893
+This client on port 40147 has uuid 765de865-935f-4551-ba22-7772845a6dbf configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-765de865-935f-4551-ba22-7772845a6dbf
+Taking next connection to: 53893
+New client attempting to connect on port: 40149-53893
+  Address = /127.0.1.1:53893
+Handshake exception on socket: 40149
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 53893
+New client attempting to connect on port: 40150-53893
+  Address = /127.0.1.1:53893
+This client on port 40150 has uuid daefda60-b4de-4a18-9ef5-1ceb31cd6dd8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-daefda60-b4de-4a18-9ef5-1ceb31cd6dd8
+Taking next connection to: 53893
+New client attempting to connect on port: 40156-53893
+  Address = /127.0.1.1:53893
+Handshake exception on socket: 40156
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 53893
+New client attempting to connect on port: 40157-53893
+  Address = /127.0.1.1:53893
+This client on port 40157 has uuid ec6f0cfa-62c7-4c27-b92b-763d47b0a30b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-daefda60-b4de-4a18-9ef5-1ceb31cd6dd8, activator-ec6f0cfa-62c7-4c27-b92b-763d47b0a30b
+Taking next connection to: 53893
